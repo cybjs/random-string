@@ -7,17 +7,19 @@ export function randomString(length: number) {
     return "";
   }
 
-  const arr = [
-    ...Array(10)
-      .fill(0)
-      .map((v, i) => 48 + i), // 0-9
-    ...Array(26)
-      .fill(0)
-      .map((v, i) => 65 + i), // A-Z
-    ...Array(26)
-      .fill(0)
-      .map((v, i) => 97 + i), // a-z
-  ];
+  const arr = Array(10)
+    .fill(0)
+    .map((v, i) => 48 + i) // 0-9
+    .concat(
+      Array(26)
+        .fill(0)
+        .map((v, i) => 65 + i) // A-Z
+    )
+    .concat(
+      Array(26)
+        .fill(0)
+        .map((v, i) => 97 + i) // a-z
+    );
 
   return Array(length)
     .fill(0)
