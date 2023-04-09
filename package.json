@@ -1,0 +1,51 @@
+{
+  "name": "random-string",
+  "version": "1.0.0-alpha.1",
+  "description": "A simple function that generated random string with specified length.",
+  "files": [
+    "dist",
+    "@types"
+  ],
+  "module": "./dist/randomString.js",
+  "main": "./dist/randomString.cjs.js",
+  "exports": {
+    "import": "./dist/randomString.js",
+    "require": "./dist/randomString.cjs.js"
+  },
+  "scripts": {
+    "release": "npx rollup -c"
+  },
+  "engines": {
+    "node": ">=14.6",
+    "npm": ">=7.8"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "type": "module",
+  "types": "./@types/randomString.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cybjs/random-string.git"
+  },
+  "keywords": [
+    "random",
+    "random-string"
+  ],
+  "author": "cybjs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cybjs/random-string/issues"
+  },
+  "homepage": "https://github.com/cybjs/random-string#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "rollup": "^3.20.2",
+    "rollup-plugin-delete": "^2.0.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  }
+}
