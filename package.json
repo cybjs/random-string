@@ -1,6 +1,6 @@
 {
   "name": "@cybjs/random-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A function that generated simple random string with specified length.",
   "files": [
     "dist",
@@ -15,10 +15,6 @@
   "scripts": {
     "test": "jest",
     "release": "npx rollup -c"
-  },
-  "engines": {
-    "node": ">=14.6",
-    "npm": ">=7.8"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
