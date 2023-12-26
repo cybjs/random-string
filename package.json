@@ -8,10 +8,6 @@
   ],
   "module": "./dist/randomString.js",
   "main": "./dist/randomString.cjs.js",
-  "exports": {
-    "import": "./dist/randomString.js",
-    "require": "./dist/randomString.cjs.js"
-  },
   "scripts": {
     "test": "jest",
     "release": "npx rollup -c"
